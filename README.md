@@ -19,7 +19,7 @@ This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Pri
 - PostgreSQL with Neon DB
 - Puppeteer
 - Prisma
-- [Live Url](https://flowscrape.kartikpawar.dev/)
+- [Live Url]([https://zyncronous101-production.up.railway.app/])
 
 ## Features
 
