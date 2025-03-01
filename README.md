@@ -1,72 +1,109 @@
-# Flow Scrape
+# Zyncronous
 
-This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Prisma, and React Flow. It enables users to create, manage, and execute complex web scraping workflows with a visual, no-code/low-code interface. The scraper comes with advanced features such as AI-based data extraction
+![home](./home.png)
+![billing](./billing.png)
+![workflow](./workflow.png)
 
-## Screenshots
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.5-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.21.1-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+[![Clerk](https://img.shields.io/badge/Clerk-Auth-4B32C3?style=for-the-badge&logo=clerk)](https://clerk.com/)
 
-### ScreenShot 1
+A powerful SaaS platform that combines workflow management with automated web scraping to streamline data collection and processing.
 
-![Screenshot 1](https://github.com/user-attachments/assets/07105297-8b67-4419-a92f-ef5ff5a038c6)
+## 🌟 Features
 
-### ScreenShot 2
+- 🔐 Secure Authentication with Clerk
+- 🔄 Visual Workflow Builder
+- 🕷️ Automated Web Scraping
+- 📊 Data Processing & Analytics
+- 🎨 Modern UI with Tailwind CSS
+- 🌙 Dark/Light Mode Support
+- ⚡ Real-time Updates
+- 📱 Responsive Design
 
-![Screenshot 2](https://github.com/user-attachments/assets/ecf9c093-d03e-4ee0-bd71-48f1d0b38538)
+## 🚀 Tech Stack
 
-## Technologies Used
+- **Framework:** Next.js 14 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Authentication:** Clerk
+- **Database:** Prisma with Neon
+- **UI Components:** Radix UI
+- **State Management:** React Query
+- **Web Scraping:** Puppeteer
+- **Charts:** Recharts
+- **Workflow:** React Flow
 
-- Nextjs 14 with server actions
-- React Flow
-- PostgreSQL with Neon DB
-- Puppeteer
-- Prisma
-- [Live Url]([https://zyncronous101-production.up.railway.app/])
+## 📦 Installation
 
-## Features
+1. Clone the repository:
+```bash
+git clone https://github.com/pakagronglb/flowscrape-ai-webscraper.git
+cd flowscrape-ai-webscraper
+```
 
-- Launch Browser
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+bun install
+```
 
-  - Initiates a browser instance to begin the web scraping process, enabling interaction with web pages.
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
 
-- Page to HTML
+4. Update the `.env.local` file with your credentials:
+```env
+NEXT_PUBLIC_APP_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+DATABASE_URL=
+```
 
-  - Extracts the complete HTML content of the current page for detailed analysis and processing.
+5. Initialize the database:
+```bash
+npx prisma generate
+npx prisma db push
+```
 
-- Extract Text from Element
+6. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+bun dev
+```
 
-  - Retrieves the text content from a specified HTML element using a given CSS selector.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Fill Input
+## 🛠️ Usage
 
-  - Automatically fills a specified input field with a desired value, emulating user input.
+1. Sign up for an account
+2. Create a new workflow
+3. Add scraping nodes to your workflow
+4. Configure scraping parameters
+5. Run and monitor your workflow
+6. View and export collected data
 
-- Click Element
+## 📝 Environment Variables
 
-  - Simulates a click action on a specified HTML element, triggering any associated events or navigation.
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_APP_URL` | Your application URL |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk public key |
+| `CLERK_SECRET_KEY` | Clerk secret key |
+| `DATABASE_URL` | Neon database connection URL |
 
-- Scroll to Element
 
-  - Scrolls to a specified element on the page, emulating user behavior for dynamic content loading.
-
-- Wait for Element
-
-  - Pauses the workflow until a specified element becomes visible or hidden on the page.
-
-- Extract Data via AI
-
-  - Uses AI to parse HTML content and extract structured data based on a custom prompt, returning JSON output.
-
-- Read JSON
-
-  - Reads and retrieves a specific key or property from a JSON object for use in workflows.
-
-- Build JSON
-
-  - Adds or updates data within an existing JSON object or creates a new one with the specified properties.
-
-- Deliver via Webhook
-
-  - Sends the scraped data to an external API endpoint through a POST request for further processing or storage.
-
-- Navigate to URL
-
-  - Navigates to a specified URL, loading the desired web page for scraping or interaction.
