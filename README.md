@@ -43,7 +43,7 @@ A powerful SaaS platform that combines workflow management with automated web sc
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/pakagronglb/flowscrape-ai-webscraper.git
+git clone https://github.com/DankJugal/Zyncronous_1.0.1
 cd flowscrape-ai-webscraper
 ```
 
@@ -106,6 +106,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | `NEXT_PUBLIC_APP_URL` | Your application URL |
 | `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk public key |
 | `CLERK_SECRET_KEY` | Clerk secret key |
-| `DATABASE_URL` | Neon database connection URL |
+| `DATABASE_URL` | Neon DB Link |
 
+## Stripe Setup
+Activate a Webhook on the YOUR_DEPLOYMENT_URL/api/webhook/ following link while testing on a deployed environment. Also you can choose proxy for web scraping a snippet of code is attached to do so, you can use BROWSERLESS for the following.
 
