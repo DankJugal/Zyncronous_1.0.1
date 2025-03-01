@@ -110,4 +110,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Stripe Setup
 Activate a Webhook on the YOUR_DEPLOYMENT_URL/api/webhook/ following link while testing on a deployed environment. Also you can choose proxy for web scraping, a snippet of code is attached to do so, you can use BROWSERLESS for the following.
-
+Here is my deployed application [link](https://zyncronous101-production.up.railway.app/)
