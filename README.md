@@ -44,7 +44,7 @@ A powerful SaaS platform that combines workflow management with automated web sc
 1. Clone the repository:
 ```bash
 git clone https://github.com/DankJugal/Zyncronous_1.0.1
-cd flowscrape-ai-webscraper
+cd Zyncronous_1.0.1
 ```
 
 2. Install dependencies:
@@ -109,5 +109,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 | `DATABASE_URL` | Neon DB Link |
 
 ## Stripe Setup
-Activate a Webhook on the YOUR_DEPLOYMENT_URL/api/webhook/ following link while testing on a deployed environment. Also you can choose proxy for web scraping a snippet of code is attached to do so, you can use BROWSERLESS for the following.
+Activate a Webhook on the YOUR_DEPLOYMENT_URL/api/webhook/ following link while testing on a deployed environment. Also you can choose proxy for web scraping, a snippet of code is attached to do so, you can use BROWSERLESS for the following.
 
